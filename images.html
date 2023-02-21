@@ -8,9 +8,51 @@
   <li><a href="#images">Images</a></li>
 </ul>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="header">
 
+ <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> | 
+    </nav>
+
+<h2>These are attempted photos of the author of this website. Unfortunately, any attempt to take a direct, straight on shot ended in the blurred images before you. I instead had to settle for taking shots where the focus was shifting between the subject and an object in the background. I don't know why what happened, cameras aren't supposed to work like that.</h2>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #111;
+}
+
+active {
+   background-color: #04AA6D;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
 * {
   box-sizing: border-box;
 }
@@ -80,18 +122,28 @@ img {
   vertical-align: middle;
 }
 
-<div class="row"> 
-  <div class="column">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/falls2.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
 	</div>
 </style>
 </head>
 <body>
 
-<img src="https://i.imgur.com/jRCEY7X.png" class="img-responsive" alt=""> </div>
+<div class="row"> 
+  <div class="column">
+    <img src="https://i.imgur.com/NOQTPE7.jpg" style="width:35%">
+    <img src="https://i.imgur.com/knUlRl3.jpg" style="width:35%">
+    <img src="https://i.imgur.com/eQkMT8o.jpg" style="width:35%">
+    <img src="https://i.imgur.com/W9N2onq.jpg" style="width:35%">
 
 </body>
 </html>
